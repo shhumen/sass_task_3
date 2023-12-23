@@ -1,0 +1,125 @@
+.section_1 {
+  margin-top: $base-margin * 3;
+  padding: $base-padding * 3 0;
+  @include flex(space-between);
+  .card {
+    @include card($base-margin * 5, null);
+  }
+  .content_section {
+    h3 {
+      font-weight: 500;
+      font-size: $font-size-sm * 1.5;
+      margin-bottom: $base-margin * 2;
+    }
+    p {
+      color: $text;
+      font-size: 15px;
+    }
+    button {
+      @include button($white, $blue);
+      margin-top: $base-margin * 3;
+    }
+  }
+}
+
+.section_2 {
+  margin-top: $base-margin * 3;
+  width: 100%;
+  background-color: $blue;
+  padding: $base-padding * 2 $base-padding * 3;
+  @include flex(space-around);
+  .card {
+    @include card(null, $base-margin * 5);
+  }
+  .content_section {
+    h3 {
+      color: $white;
+      font-weight: 500;
+      font-size: $font-size-sm * 1.5;
+      margin-bottom: $base-margin * 2;
+    }
+    p {
+      color: #aed6f1;
+      font-size: 15px;
+    }
+    button {
+      @include button($blue, $white);
+      margin-top: $base-margin * 3;
+    }
+  }
+}
+
+.section_3 {
+  margin-top: $base-margin * 3;
+  .title {
+    text-align: center;
+    h2 {
+      font-size: $font-size-lg;
+      font-weight: 500;
+      margin: $base-margin;
+    }
+    p {
+      color: $text;
+    }
+  }
+  .cards {
+    padding: $base-padding * 3 0;
+    margin-top: $base-margin * 2;
+    @include flex(space-between);
+    .card {
+      @include flex(center, column);
+      @include card(null, null);
+      .card_content {
+        text-align: center;
+        margin-top: $base-margin * 2;
+        padding: $base-padding * 2;
+        p {
+          color: $text;
+          font-size: 15px;
+          font-weight: 400;
+        }
+        button {
+          @include button($white, $blue);
+          font-size: 15px;
+          font-weight: 600;
+          margin-top: $base-margin * 2;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background: $white;
+  .footer {
+    @include flex(center, column);
+    .content {
+      p {
+        color: $text;
+        font: $font-size-sm;
+        span {
+          color: $black;
+          font-weight: 700;
+        }
+      }
+    }
+    .icons {
+      margin: $base-margin * 5 0;
+
+      display: flex;
+      gap: 45px;
+      .icon {
+        width: 40px;
+        height: 40px;
+        @include flex(center);
+        border-radius: 50%;
+        border: 1px solid $text;
+        outline: 1px solid $text;
+        outline-offset: 4px;
+        i {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

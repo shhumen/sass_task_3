@@ -1,0 +1,30 @@
+// theme colors
+$blue: #3299ef;
+$white: #fff;
+$black: #000;
+$text: #999999;
+$danger: #d32752;
+$warning: #f7b84b;
+$success: #1ac888;
+$info: #f6c31c;
+
+// .btn-save {
+//   background-color: map-get($colors, 'orange');
+// }
+// spacing
+$base-padding: 0.75rem;
+$base-margin: 0.75rem;
+
+// borders
+$base-border-thickness: 1px;
+$base-border-radius: 10px;
+
+$box-shadow: 1px 3px 5px rgb(79, 25, 25);
+
+$base-font-size: 1.5rem;
+
+$font-size-sm: $base-font-size * 0.75;
+$font-size-md: $base-font-size * 1.25;
+$font-size-lg: $base-font-size * 1.5;
+$font-size-xl: $base-font-size * 2;
+$font-size-xxl: $base-font-size * 3;

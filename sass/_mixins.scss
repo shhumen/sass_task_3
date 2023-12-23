@@ -1,0 +1,41 @@
+@mixin flex($justify-content: space-between, $flex-direction: row) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: center;
+  flex-direction: $flex-direction;
+}
+
+@mixin width_height($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin button($color, $bg-color) {
+  border: none;
+  color: $color;
+  background-color: $bg-color;
+  padding: $base-padding $base-padding * 2;
+  border: 1px solid $bg-color;
+  color: $color;
+  font-size: $font-size-sm;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+@mixin card($margin-right, $margin-left) {
+  .card_img {
+    width: 350px;
+    border-radius: 50%;
+    overflow: hidden;
+    outline: 1px solid #e2e2e2;
+    outline-offset: 8px;
+    margin-right: $margin-right;
+    margin-left: $margin-left;
+  }
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
